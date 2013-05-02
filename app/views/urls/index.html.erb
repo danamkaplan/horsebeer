@@ -1,0 +1,16 @@
+<h1>Index of the Urls</h1>
+
+<%= form_for Url.new do |u| %>
+	<%= u.label :url %>
+	<%= u.text_field :url %><br />
+	<%= u.label :user %>
+	<%= u.text_field :user %><br />
+	<%= u.submit %>
+<% end %>
+
+<ul></ul>
+	<% for url in @urls %>
+	<li> Name: <%= url.user %>
+	 URL: <%= url.url %></li>
+	<% end %>
+</ul>
