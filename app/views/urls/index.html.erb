@@ -8,9 +8,9 @@
 	<%= u.submit %>
 <% end %>
 
-<ul></ul>
-	<% for url in @urls %>
-	<li> Name: <%= url.user %>
-	 URL: <%= url.address %></li>
+<ul>
+	<% @urls.each |url| %>
+		<li> Name: <%= url.user %>
+		 URL: <%= url.address %></li>
 	<% end %>
 </ul>
