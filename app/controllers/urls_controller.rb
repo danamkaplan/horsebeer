@@ -3,8 +3,13 @@ class UrlsController < ApplicationController
   	@urls = Url.all
   end
 
-  def create
-  	@url = Url.new(params[:url])
+  def new
+  	@url = Url.new
+  end
+
+  def create	
+  	@url = Url.create!(params[:url])
   	redirect_to :back
   end
 end
+

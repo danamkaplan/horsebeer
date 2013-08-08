@@ -9,7 +9,7 @@
 <% end %>
 
 <ul>
-	<% @urls.each |url| %>
+	<% @urls.each do |url| %>
 		<li> Name: <%= url.user %>
 		 URL: <%= url.address %></li>
 	<% end %>
