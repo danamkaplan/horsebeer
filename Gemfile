@@ -7,7 +7,8 @@ gem 'rails', '3.2.11'
 
 #Separated development and production DBs
 group :development, :test do
-  gem 'sqlite3'
+  #gem 'sqlite3'
+  gem 'pg'
 end
 
 group :production do
