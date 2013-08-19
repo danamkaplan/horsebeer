@@ -34,5 +34,5 @@ production:
   pool: 5
   username:
   password:
-  host: localhost
+
   #timeout: 5000
